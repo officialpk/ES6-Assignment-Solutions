@@ -6,21 +6,34 @@
     <title>Sample Registration Form</title>
 </head>
 <body>
+    <table border='1px solid black'>
+        <thead>
+            <th>User ID</th>
+            <th>Full Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Mode of Payment</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <form>
-        <h3>First Name : <input type="text" placeholder="first name"></h3>
-        <h3>Last Name : <input type="text" placeholder="last name"></h3>
-        <h3>Mobile : <input type="text" placeholder="10 digit Number"></h3>
-        <h3>Email : <input type="text" placeholder="Email Address"></h3>
-        <h3>Gender : Male <input type="radio" name="gender">   Female <input type="radio" name="gender"></h3>
+        <h3>First Name : <input type="text" placeholder="first name" title="Enter firstname"></h3>
+        <h3>Last Name : <input type="text" placeholder="last name" title="Enter lastname"></h3>
+        <h3>Mobile : <input type="text" placeholder="10 digit Number" title="check mobile number"></h3>
+        <h3>Email : <input type="text" placeholder="Email Address" title="check email id is valid"></h3>
+        <h3>Gender : Male <input type="radio" name="gender" value="male">   Female <input type="radio" name="gender" value="female"></h3>
         <h3>Mode : <select>
-                            <option value='online'>Online Mode</option>
-                            <option value='offline'>Offline Mode</option>
-                    </select>
-        </h3>
-        <h3>Password : <input type="password" placeholder="password" title="Include Aa-Zz 0-9 [!@#$%^&*()] atleast 8 char "></h3>
-        <h3><input type="checkbox"> I agree to the Terms and Condition.</h3>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-    </form>
+            <option value='online'>Online Mode</option>
+            <option value='offline'>Offline Mode</option>
+        </select>
+    </h3>
+    <h3>Password : <input type="password" placeholder="password" title="Include Aa-Zz 0-9 [!@#$%^&*()] atleast 8 char "></h3>
+    <h3><input type="checkbox"> I agree to the Terms and Condition.</h3>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+<script src="script.js"></script>
 </body>
 </html>
