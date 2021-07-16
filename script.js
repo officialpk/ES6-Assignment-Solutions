@@ -1,5 +1,5 @@
 var dataArray =[];
-var form = document.querySelector('form');
+var form = document.querySelectorAll('form');
 var checkbox = document.querySelector('input[type="checkbox"]');
 var tbody = document.querySelector('tbody');
 var search = document.querySelector('input[type="search"]');
@@ -48,7 +48,7 @@ search.addEventListener('input',(e)=>{
 })
 
 
-form.addEventListener('submit',(e)=>{
+form[0].addEventListener('submit',(e)=>{
     e.preventDefault();
     
     if(checkbox.checked){
@@ -98,5 +98,16 @@ form.addEventListener('submit',(e)=>{
     else{
         alert("Please accept the Terms and condition to submit the form")
     }
-    form.reset();
+    form[0].reset();
+})
+
+form[1].addEventListener('submit',(e)=>{
+    e.preventDefault();
+    var email = document.querySelector('input[name="email"]');
+    var pwd = document.querySelector('input[name="pwd"]');
+
+    console.log(email.value , pwd.value);
+
+    //complete the remaining logic
+
 })
