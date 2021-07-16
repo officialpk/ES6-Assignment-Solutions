@@ -24,15 +24,15 @@
     <form>
         <h3>First Name : <input type="text" placeholder="first name" title="Enter firstname"></h3>
         <h3>Last Name : <input type="text" placeholder="last name" title="Enter lastname"></h3>
-        <h3>Mobile : <input type="text" placeholder="10 digit Number" title="check mobile number"></h3>
-        <h3>Email : <input type="text" placeholder="Email Address" title="check email id is valid"></h3>
+        <h3>Mobile : <input  pattern="^\d{10,12}$" type="text" placeholder="10 digit Number" title="check mobile number"></h3>
+        <h3>Email : <input pattern="^[A-Za-z\d]+@+[a-zA-Z]+\.+[a-zA-Z]{3,}$" type="text" placeholder="Email Address" title="check email id is valid"></h3>
         <h3>Gender : Male <input type="radio" name="gender" value="male">   Female <input type="radio" name="gender" value="female"></h3>
         <h3>Mode : <select>
             <option value='online'>Online Mode</option>
             <option value='offline'>Offline Mode</option>
         </select>
     </h3>
-    <h3>Password : <input type="password" placeholder="password" title="Include Aa-Zz 0-9 [!@#$%^&*()] atleast 8 char "></h3>
+    <h3>Password : <input pattern="^(?=.*[0-9])(?=.*[!@#$%^&*()])(?=.*[a-z])(?=.*[A-Z]).{8,}$" type="password" placeholder="password" title="Include Aa-Zz 0-9 [!@#$%^&*()] atleast 8 char "></h3>
     <h3><input type="checkbox"> I agree to the Terms and Condition.</h3>
     <button type="submit">Submit</button>
     <button type="reset">Reset</button>
