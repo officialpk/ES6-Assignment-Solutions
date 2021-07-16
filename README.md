@@ -1,16 +1,16 @@
 # ES6-Assignment-Solutions
 
-ES6 tasks
+#ES6 tasks
 
-Rules :
-1.only use es6 syntax. Do not use normal javascript syntax 
-2. Do not add css / bootstraps 
-3. Do not give class, id for any tags eg : 
+#Rules :
+#1.only use es6 syntax. Do not use normal javascript syntax 
+#2. Do not add css / bootstraps 
+#3. Do not give class, id for any tags eg : 
 <div id="" Class ="" ></div> //wrong. Do not do this. Avoid id and class 
 (hint : use queryselector(),  queryselectorAll() in js for dom manipulation) 
-4. Do not use jquery/ any external library 
-5. Build a single page application
-6. Should follow task order. Do not skip any task order
+#4. Do not use jquery/ any external library 
+#5. Build a single page application
+#6. Should follow task order. Do not skip any task order
 
 Task order
 
