@@ -1,8 +1,8 @@
+var dataArray =[];
 var form = document.querySelector('form');
 var checkbox = document.querySelector('input[type="checkbox"]');
 var tbody = document.querySelector('tbody');
-var dataArray =[];
-
+var search = document.querySelector('input[type="search"]');
 const display=()=>{
     tbody.innerHTML="";
     dataArray.map((itm,index)=>{
@@ -18,6 +18,27 @@ const display=()=>{
         `
     })
 }
+
+search.addEventListener('input',(e)=>{
+    if(e.target.value!=''){
+        var filterData = dataArray.filter(itm=> itm.fullname.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
+        tbody.innerHTML="";
+        filterData.map((itm,index)=>{
+            tbody.innerHTML += `
+            <tr>
+                <td>${index+1}</td>
+                <td>${itm.fullname}</td>
+                <td>${itm.mobile}</td>
+                <td>${itm.email}</td>
+                <td>${itm.gender}</td>
+                <td>${itm.mode}</td>
+            </tr>
+            `
+        })
+        return;
+    }
+    display();
+})
 
 
 form.addEventListener('submit',(e)=>{
