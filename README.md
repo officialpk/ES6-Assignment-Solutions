@@ -1,5 +1,9 @@
 # ES6-Assignment-Solutions
 
+full question : https://docs.google.com/document/d/1vI_dsX2wuaP38tAAkLrtD1luthtZjjenmKjqTv-nFik/edit?usp=sharing
+
+
+
 ES6 tasks
 
 Rules :
