@@ -14,9 +14,16 @@ const display=()=>{
             <td>${itm.email}</td>
             <td>${itm.gender}</td>
             <td>${itm.mode}</td>
+            <td><button onclick="remove(${index})">X</button></td>
         </tr>
         `
     })
+}
+
+const remove=(index)=>{
+    console.log(index);
+    dataArray.splice(index,1);
+    display();
 }
 
 search.addEventListener('input',(e)=>{
